@@ -14,4 +14,4 @@ int Akk(int n, int m)
         return Akk(n - 1, Akk(n, m - 1));
 }
 
-Console.WriteLine("Результат:"+Akk(m, n));
+Console.WriteLine("Ответ:"+Akk(m, n));
