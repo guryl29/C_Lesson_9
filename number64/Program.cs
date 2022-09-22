@@ -3,10 +3,23 @@ int m = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число N");
 int n = int.Parse(Console.ReadLine());
 
-for( int a = m; a<=n; a++)
+int naturalNumbers ( int m, int n)
 {
-    Console.Write ($"{a} ");
+    if ( m == n)
+    {
+        Console.WriteLine($"{m}");
+        return m;
+    }
+    else
+    {
+        Console.Write($"{m}  ");
+        naturalNumbers(m+1,n);
+    }
+    return m;
+
 }
+naturalNumbers(m,n);
+
 
 
 
